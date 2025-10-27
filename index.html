@@ -3,10 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
+  <title>Ajinkya Kotwal — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Welcome — portfolio coming soon.</p>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Ajinkya Kotwal</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="images/profile.jpg" alt="Ajinkya Kotwal" class="profile-pic" />
+      <h2>Hello, I'm <span>Ajinkya</span></h2>
+      <p>A Data Engineer & ML Enthusiast passionate about building data-driven solutions.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a data engineer with experience in SQL, GCP, Python, and ETL pipelines. I enjoy solving business problems
+        using data, and I'm currently exploring machine learning and AI applications in the telecom domain.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">SQL / Teradata</div>
+        <div class="skill-card">GCP (BigQuery, Cloud Storage)</div>
+        <div class="skill-card">Python (Pandas, NumPy)</div>
+        <div class="skill-card">ETL & Data Pipelines</div>
+        <div class="skill-card">Dashboards & KPIs</div>
+        <div class="skill-card">Machine Learning</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Retention KPI Logic Revamp</h3>
+          <p>Developed new retention logic to correct skewed customer data for VOIS dashboards.</p>
+          <a href="https://github.com/ajinkyakotwal/retention-logic" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>EV Infrastructure Analysis</h3>
+          <p>Compared Pune vs San Francisco EV station planning to identify optimal future placements.</p>
+          <a href="https://github.com/ajinkyakotwal/ev-infra-analysis" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>ML Model for Eating Habits</h3>
+          <p>Created an ML model analyzing meal and sleep patterns to predict eating habits.</p>
+          <a href="https://github.com/ajinkyakotwal/eating-habits-ml" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or opportunities!</p>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:ajinkyakotwal@gmail.com">ajinkyakotwal@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/ajinkyakotwal">github.com/ajinkyakotwal</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/ajinkyakotwal">linkedin.com/in/ajinkyakotwal</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ajinkya Kotwal. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
